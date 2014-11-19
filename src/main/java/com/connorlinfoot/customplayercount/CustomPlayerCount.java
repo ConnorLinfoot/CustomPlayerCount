@@ -56,7 +56,7 @@ public class CustomPlayerCount extends JavaPlugin {
     }
 
     private void registerCommands(ConsoleCommandSender console) {
-        getCommand("bbc").setExecutor(new CPCCommand());
+        getCommand("cpc").setExecutor(new CPCCommand());
         console.sendMessage(Prefix + "Commands have been registered");
     }
 }
