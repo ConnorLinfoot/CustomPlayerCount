@@ -23,7 +23,7 @@ public class Ping implements Listener {
         }
 
         event.setMaxPlayers(maxPlayers);
-        event.setMotd(event.getMotd() + ChatColor.COLOR_CHAR + onlinePlayers + ChatColor.COLOR_CHAR + maxPlayers);
+        //event.setMotd(event.getMotd() + ChatColor.COLOR_CHAR + onlinePlayers + ChatColor.COLOR_CHAR + maxPlayers);
     }
 
 }
