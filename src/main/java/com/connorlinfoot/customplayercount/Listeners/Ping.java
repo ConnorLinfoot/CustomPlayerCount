@@ -11,15 +11,13 @@ public class Ping implements Listener {
 
     @EventHandler
     public void onPing(ServerListPingEvent event) {
-        int onlinePlayers = CustomPlayerCount.getPlugin().getConfig().getInt("Online Players");
+        int onlinePlayers = Bukkit.getOnlinePlayers().length;
         int maxPlayers = CustomPlayerCount.getPlugin().getConfig().getInt("Max Players");
-
-        if (onlinePlayers == -1) {
-            onlinePlayers = Bukkit.getOnlinePlayers().length;
-        }
 
         if (maxPlayers == -1) {
             maxPlayers = Bukkit.getMaxPlayers();
+        } else if (maxPlayers == -2) {
+            maxPlayers = onlinePlayers;
         }
 
         event.setMaxPlayers(maxPlayers);

@@ -1,3 +1,2 @@
-# If value is set to -1 it will use the real value, online players currently does not work!
-Online Players: -1
+# If value is set to -1 it will use the real value, use -2 to make the value the same as the current online players
 Max Players: -1
