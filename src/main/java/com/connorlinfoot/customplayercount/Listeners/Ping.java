@@ -14,11 +14,11 @@ public class Ping implements Listener {
         int onlinePlayers = CustomPlayerCount.getPlugin().getConfig().getInt("Online Players");
         int maxPlayers = CustomPlayerCount.getPlugin().getConfig().getInt("Max Players");
 
-        if (onlinePlayers != -1) {
+        if (onlinePlayers == -1) {
             onlinePlayers = Bukkit.getOnlinePlayers().length;
         }
 
-        if (maxPlayers != -1) {
+        if (maxPlayers == -1) {
             maxPlayers = Bukkit.getMaxPlayers();
         }
 
