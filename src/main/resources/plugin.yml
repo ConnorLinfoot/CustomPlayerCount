@@ -1,0 +1,8 @@
+name: CustomPlayerCount
+description: CustomPlayerCount
+main: com.connorlinfoot.customplayercount.CustomPlayerCount
+version: 1.0-SNAPSHOT
+authors: [Connor Linfoot]
+commands:
+  cpc:
+    description: CustomPlayerCount command
